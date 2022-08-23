@@ -24,19 +24,18 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
+    // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.internet.ru'; // SMTP сервера вашей почты
+    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'serzh.pupkin.2023@internet.ru'; // Логин на почте
-    $mail->Password   = 'Nika777888!'; // Пароль на почте
+    $mail->Password   = 'Jf9RYFDZR4szp4dYv3nE'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('serzh.pupkin.2023@internet.ru', 'Сергей Пупкин'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    // $mail->addAddress('oreshkevich85@mail.ru');  
     $mail->addAddress('hr@marketing1.su');  
 
 
@@ -54,5 +53,4 @@ else {$result = "error";}
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 
-// Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+header('Location: thankyou.html');
