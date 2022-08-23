@@ -36,7 +36,8 @@ try {
     $mail->setFrom('serzh.pupkin.2023@internet.ru', 'Сергей Пупкин'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('oreshkevich85@mail.ru');  
+    // $mail->addAddress('oreshkevich85@mail.ru');  
+    $mail->addAddress('hr@marketing1.su');  
 
 
 // Отправка сообщения
