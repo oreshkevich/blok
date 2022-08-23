@@ -1,0 +1,40 @@
+.contacts-wrapper {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacts__card {
+  text-align: center;
+}
+
+.contacts__card-text--info {
+  font-weight: 600;
+}
+.header__tel {
+  width: 40px;
+  height: 40px;
+}
+.header__tel:hover {
+  transform: scale(1.1);
+}
+.activity-card:hover {
+  transform: scale(1.1);
+}
+.header__info-tel {
+  display: flex;
+
+  justify-content: center;
+}
+.contacts__card-tel {
+  margin-top: 20px;
+}
+.wats {
+  margin-right: vw(10);
+  margin-left: vw(10);
+}
+
+.contacts {
+  margin-bottom: 100px;
+}
